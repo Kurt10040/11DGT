@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+<!--    link to the css stylesheet-->
+        <link rel="stylesheet" href="Styles/main.css"> 
+<!--    links to used font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        
+        <title>Introduction to Tetris - Stacking</title>
+    </head>
+    
+    <body>
+<!--    Navigation bar-->
+        <div class="nav navigation">
+            <ul class="nav nav-bar">
+                <li><a href="index.html"><img src="images/Tetris-pco-logo-transparent-bg.png" alt="website-logo" id="logo"></a></li>
+                <li>
+                    <div class="dropdown"> <!-- dropdown menu -->
+                        <a href="#" class="nav nav-link dropbtn" id="tetris-websites">Learn v</a>
+                        <div class="dropdown-content">
+                            <a href="stacking.html">Stacking</a>
+                            <a href="openers.html">Openers</a>
+                            <a href="garbage.html">Lines & Garbage</a>
+                            <a href="rankings.html">Rankings</a>
+                        </div>
+                    </div>
+                </li>
+                <li><div class="dropdown">
+                    <a href="#" class="nav nav-link dropbtn" id="practice">Practice</a>
+                    <div class="dropdown-content">
+                        <a href="https://jstris.jezevec10.com/">Jstris</a>
+                        <a href="https://tetresse.harddrop.com/">Tetresse</a>
+                        <a href="https://tetris.com/">Tetris.com</a>
+                    </div>
+                </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                    <a href="#" class="nav nav-link dropbtn" id="other-links">Other Links v</a>
+                    <div class="dropdown-content">
+                        <a href="https://tetr.io/">TETR.IO</a>
+                        <a href="https://harddrop.com/">Harddrop wiki</a>
+                        <a href="https://gitlab.com/UniQMG/tetrio-plus/-/wikis/home">TETR.IO PLUS</a>
+                    </div>
+                </div>
+                </li>
+            </ul>
+        </div>
+        
+<!--    Title bar at the top with background image-->
+        <div class="bg" id="stacking-bg">
+            <div class="titlet">
+                <h1>Stacking</h1>
+            </div>
+        </div>
+        
+<!--    Main stacking page contents-->
+        <div class="content content-stacking">
+            <div class="info keywords">
+                <h1><strong>Key words</strong></h1>
+                <p><strong>Tetris:</strong> when a player uses the I piece to clear 4 lines vertically.</p>
+                <p>In Tetris, usually the queue is made using the 7-bag randomizer method. Every 7 pieces (L,J,S,Z,I,O,T) in the queue will be the 7 tetrominos in a random order, this is so that the order and frequency of your pieces in the queue will be fair and consistent.</p>
+            </div>
+            <hr>
+            <div class="info stacking-flat">
+                <div id="stackingflattext">
+                    <h1>Stacking flat</h1>
+                    <p>Generally, when playing Tetris you would want to maintain a flat stack throughout the game, but not too flat so that there are still spaces for s and z pieces. This is so that you will always have a place for your next pieces. <br>Keeping a flat stack is also beneficial for your thinking speed and reaction time as a flat stack will be much easier to read and decide where to place pieces. Good stacking in tetris will result in faster reaction times and overall faster gameplay, as well as consistently building for that back-to-back tetris.</p>
+                </div>
+                
+                <div class="centerimages">
+                    <div class="stackingflatimg-cont">
+                        <div>
+                            <img src="images/flat-stack-board.png" class="tetr-media" alt="a tetris board with flat stacking">
+                            <p class="imglabel">Flat stack</p>
+                        </div>
+                        <div>
+                            <img src="images/flat-stack-board2.png" class="tetr-media" alt="a tetris board with somewhat flat stacking">
+                            <p class="imglabel">Semi Flat stack</p>
+                        </div>
+                        <div>
+                            <img src="images/non-flat-stack-board.png" class="tetr-media" alt="a tetris board with uneven stacking">
+                            <p class="imglabel">Uneven stack</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>Having a flat stack does not mean having your stack look like the first image where the surface is almost perfect. A stack like the 2nd image is still usually considered as a flat stack and can be made even flatter if played well.</p>
+            </div>
+            <hr>
+            <div class="info dependencies">    
+                <h1>Dependencies</h1>
+                <div>
+                    <div id="lj-dep-img-cont">
+                        <img src="images/lj-dependency2.png" class="tetr-media" alt="l/j piece dependency in a tetris stack">
+                        <p class="imglabel">L/J dependency</p>
+                    </div>
+                    <p>When you are stacking, you will come across times when there is a 2 block deep hole which can only be filled with either an L or J piece. This is called an L/J dependency. An I piece can also be used to fill a 2 block deep hole. There are exceptions when an I piece must be used or there is no other option, but other than that, it is recommended to keep it in hold and use the I piece only for clearing.</p>
+                </div>
+                <br>
+                <div>
+                    <div id="i-dep-img-cont">
+                        <img src="images/i-dependency.png" class="tetr-media" alt="i piece dependency in a tetris stack">
+                        <p class="imglabel">I dependency</p>
+                    </div>
+                    <p>Try not to make empty columns more than 2 blocks deep as this will create an I dependency. There is only one I piece for every bag which means that you will have to sacrifice a tetris clear in order to fill the dependency.  This opens up opportunities for inconsistent and un-flat stacking. </p>
+                </div>
+                <br><br>
+                <p>The T piece can be used to convert an S dependency into a Z dependency, and vice versa. A T piece is also useful for filling up S/Z dependencies in order to get a flatter stack.</p>
+            </div>
+            <hr>
+            <div class="info 9-0">
+                <h1>9-0 Stacking</h1>
+                <p>9-0 (nine-oh) stacking when you stack your pieces all towards the 9 left columns of the board leaving a single column at the very right side for clearing with an I piece. Stair holes are filled using the S/Z pieces.</p>
+                
+                <p>There are many different ways to stack around a well in tetris, the common stacking methods are 9-0, 6-3, and 5-4. 8-1 and 7-2 stacking methods are also an option, although they are usually reserved for setting up t-spins and are harder build. </p>
+                
+                <p>It is recommended to master 9-0 stacking until around S rank as it is the easiest to learn while still proving to be a very effective method of stacking. </p>
+            </div>
+            <hr>
+            <div>
+                <p>If you wish to learn more about the other stacking methods, check out these other wikis where you can read up on them, as well as some recommended Youtube videos. </p>
+            </div>
+        </div>
+        
+<!--    Footer section at the bottom of the page-->
+        <br>
+        <div class="footer">
+            <div class="footer-content">
+                <a href="index.html"><img src="images/Tetris-pco-logo-transparent-bg.png" alt="website-logo" id="logo"></a>
+                <p>Tetris Basics</p>
+            </div>
+        </div>
+    </body>
+    
+</html>

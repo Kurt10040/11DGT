@@ -1,58 +1,80 @@
 <!DOCTYPE HTML>
 
+<!--ALWAYS ADD COMMENTS IN Readable SENTENCES-->
+
 <html>
     
     <head>
-    
         <meta charset="utf-8">
-        <title>Wattesigma</title>
-    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+<!--    link connections for styling-->
+        <link rel="stylesheet" href="Styles/main.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        
+        <title>Introduction to Tetris</title>
     </head>
     
     <body>
-        
-        <h1>All about <em>skibidi sigmas</em></h1>
-        
-        <img src="https://res.cloudinary.com/dzdgpwtox/image/upload/w_600,c_scale,f_auto/v1732259664/designer-tool-uploads/bucket_3267/1732259662197.png" alt="Roblox man face" width="250">
-        
-        <h2>Skibidi rizzing</h2>
-        
-        <p>L bozo you cant gain this skillset yet</p>
-        
-        <h2>Babk gronk level aura maxxing sound waves</h2>
-        
-        <p>
-            All my friends are <strong>toxic</strong><br>
-            So <strong>ambitionless</strong> and <strong>rude</strong><br>
-            And always <strong>negative</strong><br>
-            I need new friends but<br>
-            <strong>its not that <em>easy</em></strong>
-        </p>
-        
-        <p>Anyways go and do something else now <em>byebye</em></p>
-        
-        <h2>The upsides to having maxxed out aura</h2>
-        
-        <ul>
-        
-            <li>You get the huzz</li>
-            <li>It's skibidi sigma</li>
-            <li>Diddy will try to rizz you up</li>
-        
-        </ul>
-        
-        <h3>Top 3 aura grinders in planet earth</h3>
-        
-        <ol>
-        
-            <li>You</li>
-            <li>Roblox man face</li>
-            <li>Larry</li>
-        
-        </ol>
-        
-        <img src="https://media2.giphy.com/media/p0ydOvZ6xm8PMe5qlr/giphy_s.gif?cid=6c09b952nao4ithfu9ctdoyuovaezwjgyrhpu4znlb3lm3rm&ep=v1_internal_gif_by_id&rid=giphy_s.gif&ct=g" alt="ptdable" width="200">
-    
+
+    <!-- header section of my website at the top, for the navigation bar that includes the dropdown links-->
+        <!-- NAVIGATION BAR -->
+        <div class="nav navigation">
+            <ul class="nav nav-bar">
+                <li>
+                    <a href="index.html"><img src="images/Tetris-pco-logo-transparent-bg.png" alt="website-logo" id="logo"></a>
+                </li>
+                <li>
+                    <div class="dropdown"> <!-- dropdown menu -->
+                        <a href="#" class="nav nav-link dropbtn" id="tetris-websites">Learn v</a>
+                        <div class="dropdown-content">
+                            <a href="stacking.html">Stacking</a>
+                            <a href="openers.html">Openers</a>
+                            <a href="garbage.html">Lines & Garbage</a>
+                            <a href="rankings.html">Rankings</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                    <a href="#" class="nav nav-link dropbtn" id="practice">Practice</a>
+                    <div class="dropdown-content">
+                        <a href="https://jstris.jezevec10.com/">Jstris</a>
+                        <a href="https://tetresse.harddrop.com/">Tetresse</a>
+                        <a href="https://tetris.com/">Tetris.com</a>
+                    </div>
+                </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                    <a href="#" class="nav nav-link dropbtn" id="other-links">Other Links v</a>
+                    <div class="dropdown-content">
+                        <a href="https://tetr.io/">TETR.IO</a>
+                        <a href="https://harddrop.com/">Harddrop wiki</a>
+                        <a href="https://gitlab.com/UniQMG/tetrio-plus/-/wikis/home">TETR.IO PLUS</a>
+                    </div>
+                </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-home"> <!-- Main website homepage content -->
+
+            <div class="intro-section"> <!--main content of the homepage containing the image and an intro text-->
+
+                <div class="image-container intro-image-cont"> <!--intro image-->
+                    <img src="images/tetr-40lines-gameplay.png" id="intro-image" alt="TETR.IO 40 lines gameplay">
+                </div>
+
+                <div class="intro-content"> <!--small introdution-->
+                    <h1 class = "ubuntu-regular"><strong>Learn the basics of Tetris</strong></h1>
+                    <p>For those of you who are completely new to Tetris and TETR.IO, or just want a refresher on the basic concepts and knowledge of the game, then this website is for you!</p>
+                </div>
+            </div>
+        </div>
+
+<!--        <script src="Scripts/image-transition.js"></script>-->
     </body>
-    
 </html>

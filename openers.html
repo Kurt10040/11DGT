@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+<!--    link to the css stylesheet-->
+        <link rel="stylesheet" href="Styles/main.css"> 
+<!--    links to used font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        
+        <title>Introduction to Tetris - Openers</title>
+    </head>
+    
+    <body>
+<!--    Navigation bar-->
+        <div class="nav navigation">
+            <ul class="nav nav-bar">
+                <li><a href="index.html"><img src="images/Tetris-pco-logo-transparent-bg.png" alt="website-logo" id="logo"></a></li>
+                <li>
+                    <div class="dropdown"> <!-- dropdown menu -->
+                        <a href="#" class="nav nav-link dropbtn" id="tetris-websites">Learn v</a>
+                        <div class="dropdown-content">
+                            <a href="stacking.html">Stacking</a>
+                            <a href="openers.html">Openers</a>
+                            <a href="garbage.html">Lines & Garbage</a>
+                            <a href="rankings.html">Rankings</a>
+                        </div>
+                    </div>
+                </li>
+                <li><div class="dropdown">
+                    <a href="#" class="nav nav-link dropbtn" id="practice">Practice</a>
+                    <div class="dropdown-content">
+                        <a href="https://jstris.jezevec10.com/">Jstris</a>
+                        <a href="https://tetresse.harddrop.com/">Tetresse</a>
+                        <a href="https://tetris.com/">Tetris.com</a>
+                    </div>
+                </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                    <a href="#" class="nav nav-link dropbtn" id="other-links">Other Links v</a>
+                    <div class="dropdown-content">
+                        <a href="https://tetr.io/">TETR.IO</a>
+                        <a href="https://harddrop.com/">Harddrop wiki</a>
+                        <a href="https://gitlab.com/UniQMG/tetrio-plus/-/wikis/home">TETR.IO PLUS</a>
+                    </div>
+                </div>
+                </li>
+            </ul>
+        </div>
+        
+<!--    Title bar at the top with background image-->
+        <div class="bg" id="openers-bg">
+            <div class="titlet">
+                <h1>Openers</h1>
+            </div>
+        </div>
+        
+<!--    Main stacking page contents-->
+        <div class="content content-openers">
+            <div class="info 7-bag">
+                <h2><strong>7-bag Randomizer</strong></h2>
+                <p>In Tetris, the queue is made using the 7-bag randomizer method. Every 7 pieces (L,J,S,Z,I,O,T) in the queue will be the 7 tetrominos in a random order, this is so that the order and frequency of your pieces in the queue will be fair and consistent.</p>
+            </div>
+            <div class="info hold">
+                <h2><strong>Hold</strong></h2>
+                <p>The hold feature lets the player store the current piece and swaps it with what was in hold previously, or with the next piece in queue if there is nothing in hold. Useful for keeping a piece for later use. Utilizing the hold feature is an essential skill to be able to pull off openers swiftly. Its most commonly used to hold a T piece for a t-spin later on, or to build a certain setup which requires a specific order of pieces.
+                </p>
+            </div>
+            <hr>
+            <div class="info t-spin">
+                <div>
+                    <h1>T-spins</h1>
+                    <div class="opener-img-cont">
+                        <div>
+                            <img src="images/tspin-empty.png" class="tetr-media" alt="a tetris board with flat stacking">
+                        </div>
+                        <div id="arrow">
+                            <p>>></p>
+                        </div>
+                        <div>
+                            <img src="images/tspin-in.png" class="tetr-media" alt="a tetris board with somewhat flat stacking">
+                        </div>
+                    </div>
+                    <p>A t-spin is created by placing the T piece in a position where it’s surrounded by other blocks on 3 sides. Then you spin the t-piece either clockwise or counterclockwise.</p>
+                    <p>This will make the t-piece “spin”. If done correctly the t-piece will clear at least 2 lines, and possibly more. A normal t-spin will send 4 lines despite only clearing 2 lines, this is because t-spins in particular are rewarded in tetris. They will also be counted in a back-to-back streak.</p>
+                </div>
+                <p>There are other variations of t-spins such as the t-spin single, t-spin triple, and t-spin mini.</p>
+            </div>
+            <hr>
+            <div class="info SDPC">    
+                <h1>SDPC Opener</h1>
+                <div>
+                    <div id="lj-dep-img-cont">
+                        <img src="images/lj-dependency2.png" class="tetr-media" alt="l/j piece dependency in a tetris stack">
+                        <p class="imglabel">L/J dependency</p>
+                    </div>
+                    <p>When you are stacking, you will come across times when there is a 2 block deep hole which can only be filled with either an L or J piece. This is called an L/J dependency. An I piece can also be used to fill a 2 block deep hole. There are exceptions when an I piece must be used or there is no other option, but other than that, it is recommended to keep it in hold and use the I piece only for clearing.</p>
+                </div>
+                <br>
+                <div>
+                    <div id="i-dep-img-cont">
+                        <img src="images/i-dependency.png" class="tetr-media" alt="i piece dependency in a tetris stack">
+                        <p class="imglabel">I dependency</p>
+                    </div>
+                    <p>Try not to make empty columns more than 2 blocks deep as this will create an I dependency. There is only one I piece for every bag which means that you will have to sacrifice a tetris clear in order to fill the dependency.  This opens up opportunities for inconsistent and un-flat stacking. </p>
+                </div>
+                <br><br>
+                <p>The T piece can be used to convert an S dependency into a Z dependency, and vice versa. A T piece is also useful for filling up S/Z dependencies in order to get a flatter stack.</p>
+            </div>
+            <hr>
+            <div class="info 9-0">
+                <h1>9-0 Stacking</h1>
+                <p>9-0 (nine-oh) stacking when you stack your pieces all towards the 9 left columns of the board leaving a single column at the very right side for clearing with an I piece. Stair holes are filled using the S/Z pieces.</p>
+                
+                <p>There are many different ways to stack around a well in tetris, the common stacking methods are 9-0, 6-3, and 5-4. 8-1 and 7-2 stacking methods are also an option, although they are usually reserved for setting up t-spins and are harder build. </p>
+                
+                <p>It is recommended to master 9-0 stacking until around S rank as it is the easiest to learn while still proving to be a very effective method of stacking. </p>
+            </div>
+            <hr>
+            
+            <div>
+                <p>If you wish to learn more about the other stacking methods, check out these other wikis where you can read up on them, as well as some recommended Youtube videos. </p>
+            </div>
+        </div>
+        
+<!--    Footer section at the bottom of the page-->
+        <br>
+        <div class="footer">
+            <div class="footer-content">
+                <a href="index.html"><img src="images/Tetris-pco-logo-transparent-bg.png" alt="website-logo" id="logo"></a>
+                <p>Tetris Basics</p>
+            </div>
+        </div>
+    </body>
+    
+</html>
