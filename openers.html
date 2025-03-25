@@ -20,10 +20,11 @@
 <!--    Navigation bar-->
         <div class="nav navigation">
             <ul class="nav nav-bar">
+<!--            Image link to homepage-->
                 <li><a href="index.html"><img src="images/Tetris-pco-logo-transparent-bg.png" alt="website-logo" id="logo"></a></li>
-                <li>
+                <li> <!-- Dropdown for the different html pages -->
                     <div class="dropdown"> <!-- dropdown menu -->
-                        <a href="#" class="nav nav-link dropbtn" id="tetris-websites">Learn v</a>
+                        <a href="#" class="nav nav-link dropbtn" id="tetris-websites">Learn ▾</a>
                         <div class="dropdown-content">
                             <a href="stacking.html">Stacking</a>
                             <a href="openers.html">Openers</a>
@@ -32,59 +33,88 @@
                         </div>
                     </div>
                 </li>
-                <li><div class="dropdown">
-                    <a href="#" class="nav nav-link dropbtn" id="practice">Practice</a>
-                    <div class="dropdown-content">
-                        <a href="https://jstris.jezevec10.com/">Jstris</a>
-                        <a href="https://tetresse.harddrop.com/">Tetresse</a>
-                        <a href="https://tetris.com/">Tetris.com</a>
-                    </div>
-                </div>
-                </li>
-                <li>
+                <li> <!-- Dropdown for different sites to practice tetris on -->
                     <div class="dropdown">
-                    <a href="#" class="nav nav-link dropbtn" id="other-links">Other Links v</a>
-                    <div class="dropdown-content">
-                        <a href="https://tetr.io/">TETR.IO</a>
-                        <a href="https://harddrop.com/">Harddrop wiki</a>
-                        <a href="https://gitlab.com/UniQMG/tetrio-plus/-/wikis/home">TETR.IO PLUS</a>
+                        <a href="#" class="nav nav-link dropbtn" id="practice">Practice ▾</a>
+                        <div class="dropdown-content">
+                            <a href="https://jstris.jezevec10.com/">Jstris</a>
+                            <a href="https://tetresse.harddrop.com/">Tetresse</a>
+                            <a href="https://tetris.com/">Tetris.com</a>
+                        </div>
                     </div>
-                </div>
+                </li>
+                <li> <!-- Dropdown for other useful tetris related sites -->
+                    <div class="dropdown">
+                        <a href="#" class="nav nav-link dropbtn" id="other-links">Other Links ▾</a>
+                        <div class="dropdown-content">
+                            <a href="https://tetr.io/">TETR.IO</a>
+                            <a href="https://harddrop.com/">Harddrop wiki</a>
+                            <a href="https://gitlab.com/UniQMG/tetrio-plus/-/wikis/home">TETR.IO PLUS</a>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
         
 <!--    Title bar at the top with background image-->
-        <div class="bg" id="openers-bg">
+        <header id="openers-bg">
             <div class="titlet">
                 <h1>Openers</h1>
             </div>
-        </div>
+        </header>
         
-<!--    Main stacking page contents-->
+<!--    Main openers page contents-->
         <div class="content content-openers">
+<!--            Table of contents (toc) and the script for showing/hiding toc-->
+            <script src="Scripts/toc.js"></script>
+            <div class="toc">
+                <div>
+                    <h3>Contents</h3>
+                    <button onclick="toggleToc()" style="display: inline-block" id="togglebtn">Hide</button>
+                </div>
+                <div id="toc-main">
+                    <ul>
+                        <li><a href="#7-bag">Stacking Flat</a></li>
+                        <li><a href="#hold">Stacking Flat</a></li>
+                        <li><a href="#tspin">Dependencies</a></li>
+                        <li><a href="#sdpc">9-0 Stacking</a></li>
+                        <li><a href="#pc">9-0 Stacking</a></li>
+                        <li><a href="#pco">9-0 Stacking</a></li>
+                        <li><a href="#other-openers">9-0 Stacking</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+<!--        Section about the tetris 7-bag randomizer system-->
             <div class="info 7-bag">
+                <span id="7-bag" class="anchor"></span>
                 <h2><strong>7-bag Randomizer</strong></h2>
                 <p>In Tetris, the queue is made using the 7-bag randomizer method. Every 7 pieces (L,J,S,Z,I,O,T) in the queue will be the 7 tetrominos in a random order, this is so that the order and frequency of your pieces in the queue will be fair and consistent.</p>
             </div>
+
+<!--        Section about the hold feature-->
             <div class="info hold">
+                <span id="hold" class="anchor"></span>
                 <h2><strong>Hold</strong></h2>
                 <p>The hold feature lets the player store the current piece and swaps it with what was in hold previously, or with the next piece in queue if there is nothing in hold. Useful for keeping a piece for later use. Utilizing the hold feature is an essential skill to be able to pull off openers swiftly. Its most commonly used to hold a T piece for a t-spin later on, or to build a certain setup which requires a specific order of pieces.
                 </p>
             </div>
             <hr>
+            
+<!--        Section about the basics of t-spins-->
             <div class="info t-spin">
+                <span id="tspin" class="anchor"></span>
                 <div>
-                    <h1>T-spins</h1>
-                    <div class="opener-img-cont">
+                    <h2><strong><em>T-spins</em></strong></h2>
+                    <div class="tspin-img-cont">
                         <div>
-                            <img src="images/tspin-empty.png" class="tetr-media" alt="a tetris board with flat stacking">
+                            <img src="images/tspin-empty.png" class="tetr-media" alt="empty t-spin demo">
                         </div>
                         <div id="arrow">
                             <p>>></p>
                         </div>
                         <div>
-                            <img src="images/tspin-in.png" class="tetr-media" alt="a tetris board with somewhat flat stacking">
+                            <img src="images/tspin-in.png" class="tetr-media" alt="t-spin demo with a t piece spun into the t-spin">
                         </div>
                     </div>
                     <p>A t-spin is created by placing the T piece in a position where it’s surrounded by other blocks on 3 sides. Then you spin the t-piece either clockwise or counterclockwise.</p>
@@ -93,50 +123,130 @@
                 <p>There are other variations of t-spins such as the t-spin single, t-spin triple, and t-spin mini.</p>
             </div>
             <hr>
-            <div class="info SDPC">    
+            
+<!--        Section about how to do the SDPC tetris opener-->
+            <div class="info SDPC">
+                <span id="sdpc" class="anchor"></span>
                 <h1>SDPC Opener</h1>
-                <div>
-                    <div id="lj-dep-img-cont">
-                        <img src="images/lj-dependency2.png" class="tetr-media" alt="l/j piece dependency in a tetris stack">
-                        <p class="imglabel">L/J dependency</p>
+                <p>There are maybe hundreds of effective openers which can be played in tetris that all serve different purposes, whether to open with a spin, continue into an extended opener, or to set up for stacking. But one that will be covered in this page is called the SDPC. The SDPC opener has many variations, but starting is always the same.</p>
+                <p>To successfully build the SDPC opener, it’s necessary to have an early O piece, particularly before the S and T piece as both of these cannot be placed until the O piece is in the board. If only one of them comes before the O piece, then that is fine because you can just store it in hold until the O piece is down. </p>
+                <div id="sdpc1-img">
+                    <div class="sdpc-img-cont">
+                        <img src="images/SDPC1.png" id="sdpc1-gameplay" alt="SDPC opener's first bag">
                     </div>
-                    <p>When you are stacking, you will come across times when there is a 2 block deep hole which can only be filled with either an L or J piece. This is called an L/J dependency. An I piece can also be used to fill a 2 block deep hole. There are exceptions when an I piece must be used or there is no other option, but other than that, it is recommended to keep it in hold and use the I piece only for clearing.</p>
+                    <div id="sdpc-1st-bag-note">
+                        <p>This is the starting of the SDPC opener which uses all 7 pieces of the first bag. It sets up a t-spin which is used to build the 2nd step of the SDPC opener.</p>
+                    </div>
+                </div>
+                <hr class="mini-hr">
+<!--            Next steps after the first bag of the tetris opener -->
+                <div>
+                    <div id="tspin-triple-empty">
+                        <img src="images/tspin-triple-in.png" class="tetr-media" alt="i piece dependency in a tetris stack">
+                        <p class="imglabel">T-spin triple</p>
+                    </div>
+                    <p>While there are many ways to continue the SDPC opener from here, a great way to follow a t-spin is with another t-spin! Specifically, the t-spin triple as it will send 6 lines despite only clearing 3.</p>
+                    <p>Doing this right after the first t-spin will start a combo, which if played swiftly will send at least 10 lines to the enemy, which is basically half the board!</p>
                 </div>
                 <br>
-                <div>
-                    <div id="i-dep-img-cont">
-                        <img src="images/i-dependency.png" class="tetr-media" alt="i piece dependency in a tetris stack">
-                        <p class="imglabel">I dependency</p>
+                    <p>After clearing the first t-spin, we move on to the 2nd bag of SDPC. Clear the t-spin, then to the 3rd bag which sets up a t-spin triple into a t-spin double.</p>
+                <div id="sdpc-flow">
+                    <div class="sdpc-img-cont">
+                        <img src="images/SDPC2.png" class="tetr-media" alt="2nd step of the sdpc opener">
+                        <p class="imglabel">Bag 2</p>
                     </div>
-                    <p>Try not to make empty columns more than 2 blocks deep as this will create an I dependency. There is only one I piece for every bag which means that you will have to sacrifice a tetris clear in order to fill the dependency.  This opens up opportunities for inconsistent and un-flat stacking. </p>
+                    <div id="arrow">
+                        <p>>></p>
+                    </div>
+                    <div class="sdpc-img-cont">
+                        <img src="images/SDPC3.png" class="tetr-media" alt="3rd step of the sdpc opener">
+                        <p class="imglabel">Bag 3 (t-spin triple)</p>
+                    </div>
+                    <div id="arrow">
+                        <p>>></p>
+                    </div>
+                    <div class="sdpc-img-cont">
+                        <img src="images/SDPC4.png" class="tetr-media" alt="4th step of the sdpc opener">
+                        <p class="imglabel">Bag 4</p>
+                    </div>
                 </div>
-                <br><br>
-                <p>The T piece can be used to convert an S dependency into a Z dependency, and vice versa. A T piece is also useful for filling up S/Z dependencies in order to get a flatter stack.</p>
             </div>
             <hr>
-            <div class="info 9-0">
-                <h1>9-0 Stacking</h1>
-                <p>9-0 (nine-oh) stacking when you stack your pieces all towards the 9 left columns of the board leaving a single column at the very right side for clearing with an I piece. Stair holes are filled using the S/Z pieces.</p>
-                
-                <p>There are many different ways to stack around a well in tetris, the common stacking methods are 9-0, 6-3, and 5-4. 8-1 and 7-2 stacking methods are also an option, although they are usually reserved for setting up t-spins and are harder build. </p>
-                
-                <p>It is recommended to master 9-0 stacking until around S rank as it is the easiest to learn while still proving to be a very effective method of stacking. </p>
+<!--        Section on the definition of a perfect clear-->
+            <div class="info">
+                <span id="pc" class="anchor"></span>
+                <h2><strong><em>Perfect Clear (PC)</em></strong></h2>
+                <p>A PC is when the player achieves a perfectly empty board. This is a special type of line clear that is rewarded.</p>
+            </div>
+            <hr style="opacity: 0.25"> <!-- hr that is more transparent to add a slight separation -->
+            
+<!--        Section on how to do the PCO opener in tetris-->
+            <div class="info PCO">
+                <span id="pco" class="anchor"></span>
+                <h1>Perfect Clear Opener (PCO)</h1>
+                <div>
+<!--                Table on the different line clear amounts-->
+                    <table id="pc-line-clear">
+                        <tbody>
+                            <tr> <!-- header for the table -->
+                                <td colspan="100%" style="font-size: 13px; text-decoration: underline; font-style: italic">PC Garbage Guide</td>
+                            </tr>
+                            <tr>
+                                <th>Lines cleared:</th>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <th>Garbage sent:</th>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>8</td>
+                                <td>8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>A Perfect Clear Opener (PCO) is an opener that when completed, will result in a Perfect Clear. This type of clear is rewarded by sending a more lines depending on the amount of lines cleared. This table shows how many lines are sent based on the amount cleared to PC. Click <a href="garbage.html">here</a> for more info on sending garbage.</p>
+                    <p>There is one basic setup used to start the PCO.</p>
+                    <div>
+                        <img src="images/PCO-grey.png" alt="Bag 1 of PCO opener">
+                    </div>
+                    <p>This setup can be built in a number of ways and can be inverted.</p>
+                    <div id="pco-invs">
+                        <img src="images/PCOv1.png" alt="PCO variation">
+                        <img src="images/PCOv2.png" alt="PCO variation">
+                        <img src="images/PCOv3.png" alt="PCO variation">
+                        <img src="images/PCOinv.png" alt="PCO inverted">
+                    </div>
+                    <p>This setup uses all 7 pieces of the first bag. To complete the perfect clear, 3 of the first 4 pieces of the second bag are used for clearing all 4 lines.</p>
+                    <img src="images/pco-f.png">
+                    <p style="font-style: italic"><strong>Getting a perfect clear is not always guarranteed using this setup, with a success rate of <span style="text-decoration: underline">61.2%.</span></strong></p>
+                    <p>If the PC happens to fail, it is quite easy to set up straight into a t-spin.</p>
+                </div>
             </div>
             <hr>
             
-            <div>
-                <p>If you wish to learn more about the other stacking methods, check out these other wikis where you can read up on them, as well as some recommended Youtube videos. </p>
+<!--        Section on how to find out about other openers-->
+            <div class="info">
+                <span id="other-openers" class="anchor"></span>
+                <h2>Other Openers </h2>
+<!--            Embedded video on tetris openers-->
+                <iframe width="370" height="208" src="https://www.youtube.com/embed/NGVl0d7Ws34?si=aLUZTvgqVnnWwOZk&amp;start=58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="float: right; margin-left: 15px"></iframe>
+                <p>Having an armory of different openers is essential if you want to pull off a lethal entrance in your next vs matches. These two previously explained openers are great to use when queueing into a multiplayer match, Although normal stacking can also come in clutch in times when it is more difficult to foresee a possible opener. For this reason, it is ideal to have multiple different openers even different from the ones previously mentioned.</p>
+                <p>There are many MANY other openers out there which haven’t been covered in this page, all of which play a different purpose depending on how a player wants to play. It is recommended to check out more opener varieties to be able to build a decent armory of openers to use against your next opponent.</p>
+                <br><p>You might also want to do a more in-depth look at openers on something like YouTube. For more info on openers, click <a href="https://harddrop.com/wiki/Opener">here</a>.</p>
             </div>
         </div>
         
 <!--    Footer section at the bottom of the page-->
         <br>
-        <div class="footer">
-            <div class="footer-content">
-                <a href="index.html"><img src="images/Tetris-pco-logo-transparent-bg.png" alt="website-logo" id="logo"></a>
-                <p>Tetris Basics</p>
-            </div>
-        </div>
+            <footer>
+                <div>
+                    <a href="index.html"><img src="images/Tetris-pco-logo-transparent-bg.png" alt="website-logo" id="logo"></a>
+                    <p>Tetris Basics</p>
+                </div>
+            </footer>
     </body>
     
 </html>

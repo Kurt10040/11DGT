@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+<!--    link to the css stylesheet-->
+        <link rel="stylesheet" href="Styles/main.css"> 
+<!--    links to used font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        
+        <title>Introduction to Tetris - Rankings</title>
+    </head>
+    
+    <body>
+<!--    Navigation bar-->
+        <div class="nav navigation">
+            <ul class="nav nav-bar">
+<!--            Image link to homepage-->
+                <li><a href="index.html"><img src="images/Tetris-pco-logo-transparent-bg.png" alt="website-logo" id="logo"></a></li>
+                <li> <!-- Dropdown for the different html pages -->
+                    <div class="dropdown"> <!-- dropdown menu -->
+                        <a href="#" class="nav nav-link dropbtn" id="tetris-websites">Learn ▾</a>
+                        <div class="dropdown-content">
+                            <a href="stacking.html">Stacking</a>
+                            <a href="openers.html">Openers</a>
+                            <a href="garbage.html">Lines & Garbage</a>
+                            <a href="rankings.html">Rankings</a>
+                        </div>
+                    </div>
+                </li>
+                <li> <!-- Dropdown for different sites to practice tetris on -->
+                    <div class="dropdown">
+                        <a href="#" class="nav nav-link dropbtn" id="practice">Practice ▾</a>
+                        <div class="dropdown-content">
+                            <a href="https://jstris.jezevec10.com/">Jstris</a>
+                            <a href="https://tetresse.harddrop.com/">Tetresse</a>
+                            <a href="https://tetris.com/">Tetris.com</a>
+                        </div>
+                    </div>
+                </li>
+                <li> <!-- Dropdown for other useful tetris related sites -->
+                    <div class="dropdown">
+                        <a href="#" class="nav nav-link dropbtn" id="other-links">Other Links ▾</a>
+                        <div class="dropdown-content">
+                            <a href="https://tetr.io/">TETR.IO</a>
+                            <a href="https://harddrop.com/">Harddrop wiki</a>
+                            <a href="https://gitlab.com/UniQMG/tetrio-plus/-/wikis/home">TETR.IO PLUS</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+<!--    Title bar at the top with background image-->
+            <header id="rankings-bg">
+                <div class="titlet">
+                    <h1>Rankings</h1>
+                </div>
+            </header>
+        
+<!--    Main rankings page contents-->
+        <div class="content content-rankings">
+<!--        Section on the tetr.io ranks and info about tr-->
+            <div class="info ranks-tr">
+                <h2><strong>TETR.IO Ranks</strong></h2>
+<!--            Each span tag is used to color the text depending on the rank-->
+                <p>The TETR.IO ranks are as follows: <span style="color: grey">?,</span> <span style="color:mediumpurple">D, D+,</span> <span style="color:rebeccapurple">C-, C, C+,</span> <span style="color: royalblue">B-, B, B+,</span> <span style="color: limegreen">A-, A, A+,</span> <span style="color: yellow">S-, S, S+, SS,</span> <span style="color: orange">U,</span> <span style="color: lavender">X, X+</span></p>
+                <hr style="opacity: 0.3; border-top: dotted 3px; border-bottom: 0">
+                <p>For eaach rank in TETR.IO there is a TR requirement to be able to get that rank.</p>
+                <div>
+                    <p><span id="tr-def">TR:</span> Stands for Tetrio Rating. It's used to determine your tetrio rank and is accumulated from Tetrio league wins.</p>
+                </div>
+            </div>
+            <hr>
+            
+<!--        Section on tetrio league and placement games-->
+            <div class="league">
+                <h1>Tetra League</h1>
+<!--            Image that links to the live preview of TR requirements-->
+                <a href="https://ch.tetr.io/league/"><img src="images/tr-requirements.png" alt="TR league requirements" id="tr-req"></a>
+                <p>Tetra league is the ranked or competetive mode of TETR.IO in which you battle against other players to win TR and climb the ranks. You are paired with a player of similar rank to play against for a number of ranks.</p>
+                <p>When starting out a player will be unranked (?). To gain a rank you must play 10 <em>placement games</em> so that the TETR.IO ranking system can determine the correct rank to put you in. </p>
+                <p>To win a match it is first to 3 for <span style="color: limegreen">A+</span> and below, 5 rounds for <span style="color: yellow">SS</span> and below, and 7 rounds for <span style="color: orange">U</span> and above.</p>
+            </div>
+        </div>
+        
+<!--    Footer section at the bottom of the page-->
+        <br>
+        <footer>
+            <div>
+                <a href="index.html"><img src="images/Tetris-pco-logo-transparent-bg.png" alt="website-logo" id="logo"></a>
+                <p>Tetris Basics</p>
+            </div>
+        </footer>
+    </body>
+    
+</html>

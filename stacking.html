@@ -20,10 +20,11 @@
 <!--    Navigation bar-->
         <div class="nav navigation">
             <ul class="nav nav-bar">
+<!--            Image link to homepage-->
                 <li><a href="index.html"><img src="images/Tetris-pco-logo-transparent-bg.png" alt="website-logo" id="logo"></a></li>
-                <li>
+                <li> <!-- Dropdown for the different html pages -->
                     <div class="dropdown"> <!-- dropdown menu -->
-                        <a href="#" class="nav nav-link dropbtn" id="tetris-websites">Learn v</a>
+                        <a href="#" class="nav nav-link dropbtn" id="tetris-websites">Learn ▾</a>
                         <div class="dropdown-content">
                             <a href="stacking.html">Stacking</a>
                             <a href="openers.html">Openers</a>
@@ -32,45 +33,67 @@
                         </div>
                     </div>
                 </li>
-                <li><div class="dropdown">
-                    <a href="#" class="nav nav-link dropbtn" id="practice">Practice</a>
-                    <div class="dropdown-content">
-                        <a href="https://jstris.jezevec10.com/">Jstris</a>
-                        <a href="https://tetresse.harddrop.com/">Tetresse</a>
-                        <a href="https://tetris.com/">Tetris.com</a>
-                    </div>
-                </div>
-                </li>
-                <li>
+                <li> <!-- Dropdown for different sites to practice tetris on -->
                     <div class="dropdown">
-                    <a href="#" class="nav nav-link dropbtn" id="other-links">Other Links v</a>
-                    <div class="dropdown-content">
-                        <a href="https://tetr.io/">TETR.IO</a>
-                        <a href="https://harddrop.com/">Harddrop wiki</a>
-                        <a href="https://gitlab.com/UniQMG/tetrio-plus/-/wikis/home">TETR.IO PLUS</a>
+                        <a href="#" class="nav nav-link dropbtn" id="practice">Practice ▾</a>
+                        <div class="dropdown-content">
+                            <a href="https://jstris.jezevec10.com/">Jstris</a>
+                            <a href="https://tetresse.harddrop.com/">Tetresse</a>
+                            <a href="https://tetris.com/">Tetris.com</a>
+                        </div>
                     </div>
-                </div>
+                </li>
+                <li> <!-- Dropdown for other useful tetris related sites -->
+                    <div class="dropdown">
+                        <a href="#" class="nav nav-link dropbtn" id="other-links">Other Links ▾</a>
+                        <div class="dropdown-content">
+                            <a href="https://tetr.io/">TETR.IO</a>
+                            <a href="https://harddrop.com/">Harddrop wiki</a>
+                            <a href="https://gitlab.com/UniQMG/tetrio-plus/-/wikis/home">TETR.IO PLUS</a>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
         
 <!--    Title bar at the top with background image-->
-        <div class="bg" id="stacking-bg">
+        <header id="stacking-bg">
             <div class="titlet">
                 <h1>Stacking</h1>
             </div>
-        </div>
+        </header>
         
 <!--    Main stacking page contents-->
         <div class="content content-stacking">
+<!--        Table of contents (toc) and the script for showing/hiding toc-->
+            <script src="Scripts/toc.js"></script>
+            <div class="toc">
+                <div>
+                    <h3>Contents</h3>
+                    <button onclick="toggleToc()" style="display: inline-block" id="togglebtn">Hide</button>
+                </div>
+                <div id="toc-main">
+                    <ul>
+                        <li><a href="#keywords">Stacking Flat</a></li>
+                        <li><a href="#stackingflattext">Stacking Flat</a></li>
+                        <li><a href="#dependencies">Dependencies</a></li>
+                        <li><a href="#9-0stacking">9-0 Stacking</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+<!--        Keywords section including the definition of a 'Tetris'-->
             <div class="info keywords">
+                <span id="keywords" class="anchor"></span>
                 <h1><strong>Key words</strong></h1>
                 <p><strong>Tetris:</strong> when a player uses the I piece to clear 4 lines vertically.</p>
-                <p>In Tetris, usually the queue is made using the 7-bag randomizer method. Every 7 pieces (L,J,S,Z,I,O,T) in the queue will be the 7 tetrominos in a random order, this is so that the order and frequency of your pieces in the queue will be fair and consistent.</p>
             </div>
             <hr>
+            
+<!--        Section about how to stack flat-->
             <div class="info stacking-flat">
-                <div id="stackingflattext">
+                <span id="stackingflattext" class="anchor"></span>
+                <div>
                     <h1>Stacking flat</h1>
                     <p>Generally, when playing Tetris you would want to maintain a flat stack throughout the game, but not too flat so that there are still spaces for s and z pieces. This is so that you will always have a place for your next pieces. <br>Keeping a flat stack is also beneficial for your thinking speed and reaction time as a flat stack will be much easier to read and decide where to place pieces. Good stacking in tetris will result in faster reaction times and overall faster gameplay, as well as consistently building for that back-to-back tetris.</p>
                 </div>
@@ -95,7 +118,10 @@
                 <p>Having a flat stack does not mean having your stack look like the first image where the surface is almost perfect. A stack like the 2nd image is still usually considered as a flat stack and can be made even flatter if played well.</p>
             </div>
             <hr>
-            <div class="info dependencies">    
+            
+<!--        Section about dependencies and how to fill them-->
+            <div class="info dependencies">   
+                <span id="dependencies" class="anchor"></span>
                 <h1>Dependencies</h1>
                 <div>
                     <div id="lj-dep-img-cont">
@@ -116,28 +142,33 @@
                 <p>The T piece can be used to convert an S dependency into a Z dependency, and vice versa. A T piece is also useful for filling up S/Z dependencies in order to get a flatter stack.</p>
             </div>
             <hr>
+            
+<!--        Section about 9-0 stacking-->
             <div class="info 9-0">
+                <span id="9-0stacking" class="anchor"></span>
                 <h1>9-0 Stacking</h1>
                 <p>9-0 (nine-oh) stacking when you stack your pieces all towards the 9 left columns of the board leaving a single column at the very right side for clearing with an I piece. Stair holes are filled using the S/Z pieces.</p>
                 
-                <p>There are many different ways to stack around a well in tetris, the common stacking methods are 9-0, 6-3, and 5-4. 8-1 and 7-2 stacking methods are also an option, although they are usually reserved for setting up t-spins and are harder build. </p>
+                <p>There are many different ways to stack around a well in tetris, the common stacking methods are 9-0, 6-3, and 5-4. The 8-1 and 7-2 stacking methods are also an option, although they are usually reserved for setting up t-spins and are more complicated to build. </p>
                 
                 <p>It is recommended to master 9-0 stacking until around S rank as it is the easiest to learn while still proving to be a very effective method of stacking. </p>
             </div>
             <hr>
+            
+<!--        other??-->
             <div>
-                <p>If you wish to learn more about the other stacking methods, check out these other wikis where you can read up on them, as well as some recommended Youtube videos. </p>
+                <p>If you wish to learn more about the other stacking methods, check out the <a href="https://harddrop.com/">Harddrop wiki</a> where you can read up on them, as well as some recommended Youtube videos. </p>
             </div>
         </div>
         
 <!--    Footer section at the bottom of the page-->
         <br>
-        <div class="footer">
-            <div class="footer-content">
+        <footer>
+            <div>
                 <a href="index.html"><img src="images/Tetris-pco-logo-transparent-bg.png" alt="website-logo" id="logo"></a>
                 <p>Tetris Basics</p>
             </div>
-        </div>
+        </footer>
     </body>
     
 </html>

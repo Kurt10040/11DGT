@@ -14,21 +14,19 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         
+        <link rel="icon" href="">
         <title>Introduction to Tetris</title>
     </head>
     
     <body>
-
-    <!-- header section of my website at the top, for the navigation bar that includes the dropdown links-->
-        <!-- NAVIGATION BAR -->
+<!--    Navigation bar-->
         <div class="nav navigation">
             <ul class="nav nav-bar">
-                <li>
-                    <a href="index.html"><img src="images/Tetris-pco-logo-transparent-bg.png" alt="website-logo" id="logo"></a>
-                </li>
-                <li>
+<!--            Image link to homepage-->
+                <li><a href="index.html"><img src="images/Tetris-pco-logo-transparent-bg.png" alt="website-logo" id="logo"></a></li>
+                <li> <!-- Dropdown for the different html pages -->
                     <div class="dropdown"> <!-- dropdown menu -->
-                        <a href="#" class="nav nav-link dropbtn" id="tetris-websites">Learn v</a>
+                        <a href="#" class="nav nav-link dropbtn" id="tetris-websites">Learn ▾</a>
                         <div class="dropdown-content">
                             <a href="stacking.html">Stacking</a>
                             <a href="openers.html">Openers</a>
@@ -37,44 +35,45 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li> <!-- Dropdown for different sites to practice tetris on -->
                     <div class="dropdown">
-                    <a href="#" class="nav nav-link dropbtn" id="practice">Practice</a>
-                    <div class="dropdown-content">
-                        <a href="https://jstris.jezevec10.com/">Jstris</a>
-                        <a href="https://tetresse.harddrop.com/">Tetresse</a>
-                        <a href="https://tetris.com/">Tetris.com</a>
+                        <a href="#" class="nav nav-link dropbtn" id="practice">Practice ▾</a>
+                        <div class="dropdown-content">
+                            <a href="https://jstris.jezevec10.com/">Jstris</a>
+                            <a href="https://tetresse.harddrop.com/">Tetresse</a>
+                            <a href="https://tetris.com/">Tetris.com</a>
+                        </div>
                     </div>
-                </div>
                 </li>
-                <li>
+                <li> <!-- Dropdown for other useful tetris related sites -->
                     <div class="dropdown">
-                    <a href="#" class="nav nav-link dropbtn" id="other-links">Other Links v</a>
-                    <div class="dropdown-content">
-                        <a href="https://tetr.io/">TETR.IO</a>
-                        <a href="https://harddrop.com/">Harddrop wiki</a>
-                        <a href="https://gitlab.com/UniQMG/tetrio-plus/-/wikis/home">TETR.IO PLUS</a>
+                        <a href="#" class="nav nav-link dropbtn" id="other-links">Other Links ▾</a>
+                        <div class="dropdown-content">
+                            <a href="https://tetr.io/">TETR.IO</a>
+                            <a href="https://harddrop.com/">Harddrop wiki</a>
+                            <a href="https://gitlab.com/UniQMG/tetrio-plus/-/wikis/home">TETR.IO PLUS</a>
+                        </div>
                     </div>
-                </div>
                 </li>
             </ul>
         </div>
 
-        <div class="content-home"> <!-- Main website homepage content -->
+        <div class="content-home"> <!--main content of the homepage containing the image and an intro text-->
+            <div class="intro-section">
 
-            <div class="intro-section"> <!--main content of the homepage containing the image and an intro text-->
-
-                <div class="image-container intro-image-cont"> <!--intro image-->
+                <!--intro image-->
+                <div class="image-container intro-image-cont">
                     <img src="images/tetr-40lines-gameplay.png" id="intro-image" alt="TETR.IO 40 lines gameplay">
                 </div>
 
-                <div class="intro-content"> <!--small introdution-->
+                <!--small introdution-->
+                <div class="intro-content">
                     <h1 class = "ubuntu-regular"><strong>Learn the basics of Tetris</strong></h1>
                     <p>For those of you who are completely new to Tetris and TETR.IO, or just want a refresher on the basic concepts and knowledge of the game, then this website is for you!</p>
                 </div>
             </div>
         </div>
 
-<!--        <script src="Scripts/image-transition.js"></script>-->
+<!--    <script src="Scripts/image-transition.js"></script>-->
     </body>
 </html>
