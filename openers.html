@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en">
     
     <head>
         <meta charset="utf-8">
@@ -66,21 +66,24 @@
 <!--    Main openers page contents-->
         <div class="content content-openers">
 <!--            Table of contents (toc) and the script for showing/hiding toc-->
-            <script src="Scripts/toc.js"></script>
             <div class="toc">
+                <script src="Scripts/toc.js"></script>
                 <div>
                     <h3>Contents</h3>
                     <button onclick="toggleToc()" style="display: inline-block" id="togglebtn">Hide</button>
                 </div>
                 <div id="toc-main">
                     <ul>
-                        <li><a href="#7-bag">Stacking Flat</a></li>
-                        <li><a href="#hold">Stacking Flat</a></li>
-                        <li><a href="#tspin">Dependencies</a></li>
-                        <li><a href="#sdpc">9-0 Stacking</a></li>
-                        <li><a href="#pc">9-0 Stacking</a></li>
-                        <li><a href="#pco">9-0 Stacking</a></li>
-                        <li><a href="#other-openers">9-0 Stacking</a></li>
+                        <li><a href="#7-bag">7-Bag Randomizer</a></li>
+                        <li><a href="#hold">Hold</a></li>
+                        <li><a href="#pc">Perfect clear</a></li>
+                        <li><a href="#tspin">T-spins</a></li>
+                        <h4 style="margin: 0">Openers</h4>
+                        <ul id="tocsub">
+                            <li><a href="#sdpc">SDPC</a></li>
+                            <li><a href="#pco">PCO</a></li>
+                        </ul>
+                        <li><a href="#other-openers">Other Openers</a></li>
                     </ul>
                 </div>
             </div>
@@ -99,7 +102,14 @@
                 <p>The hold feature lets the player store the current piece and swaps it with what was in hold previously, or with the next piece in queue if there is nothing in hold. Useful for keeping a piece for later use. Utilizing the hold feature is an essential skill to be able to pull off openers swiftly. Its most commonly used to hold a T piece for a t-spin later on, or to build a certain setup which requires a specific order of pieces.
                 </p>
             </div>
-            <hr>
+            <hr style="opacity: 0.3">
+            
+            <!--        Section on the definition of a perfect clear-->
+            <div class="info">
+                <span id="pc" class="anchor"></span>
+                <h2><strong><em>Perfect Clear (PC)</em></strong></h2>
+                <p>A PC is when the player achieves a perfectly empty board. This is a special type of line clear that is rewarded.</p>
+            </div>
             
 <!--        Section about the basics of t-spins-->
             <div class="info t-spin">
@@ -172,13 +182,6 @@
                 </div>
             </div>
             <hr>
-<!--        Section on the definition of a perfect clear-->
-            <div class="info">
-                <span id="pc" class="anchor"></span>
-                <h2><strong><em>Perfect Clear (PC)</em></strong></h2>
-                <p>A PC is when the player achieves a perfectly empty board. This is a special type of line clear that is rewarded.</p>
-            </div>
-            <hr style="opacity: 0.25"> <!-- hr that is more transparent to add a slight separation -->
             
 <!--        Section on how to do the PCO opener in tetris-->
             <div class="info PCO">
@@ -220,8 +223,8 @@
                         <img src="images/PCOinv.png" alt="PCO inverted">
                     </div>
                     <p>This setup uses all 7 pieces of the first bag. To complete the perfect clear, 3 of the first 4 pieces of the second bag are used for clearing all 4 lines.</p>
-                    <img src="images/pco-f.png">
-                    <p style="font-style: italic"><strong>Getting a perfect clear is not always guarranteed using this setup, with a success rate of <span style="text-decoration: underline">61.2%.</span></strong></p>
+                    <img src="images/pco-f.png" alt="all pco solve variations">
+                    <p style="font-style: italic"><strong>Getting a perfect clear is not always guarranteed using this setup, with a success rate of <span style="text-decoration: underline;color:#f0d280">61.2%.</span></strong></p>
                     <p>If the PC happens to fail, it is quite easy to set up straight into a t-spin.</p>
                 </div>
             </div>

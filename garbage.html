@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en">
     
     <head>
         <meta charset="utf-8">
@@ -65,8 +65,26 @@
         
 <!--    Main garbage page contents-->
         <div class="content content-garbage">
+<!--            Table of contents (toc) and the script for showing/hiding toc-->
+            <div class="toc">
+                <script src="Scripts/toc.js"></script>
+                <div>
+                    <h3>Contents</h3>
+                    <button onclick="toggleToc()" style="display: inline-block" id="togglebtn">Hide</button>
+                </div>
+                <div id="toc-main">
+                    <ul>
+                        <li><a href="#lctypes">Line clear types</a></li>
+                        <li><a href="#garbage">Garbage</a></li>
+                        <li><a href="#cancel">Cancelling garbage</a></li>
+                        <li><a href="#combo">Combos</a></li>
+                        <li><a href="#b2b">Back-to-back</a></li>
+                    </ul>
+                </div>
+            </div>
 <!--        Section on the different line clear types-->
             <div class="info clear-types">
+                <span id="lctypes" class="anchor"></span>
                 <h2>Line clear types</h2>
                 <ul>
                     <li><p><span>Single:</span> 1 line is cleared at once</p></li>
@@ -79,6 +97,7 @@
             
 <!--        Section on offensive garbage and table of garbage-->
             <div class="info">
+                <span id="garbage" class="anchor"></span>
                 <h1>Garbage</h1>
                 <p>Garbage is the main form of attack in Tetris multiplayer. Basically how it works is if you clear multiple rows or ‘lines’ at once, garbage lines will be added to the bottom of your opponent’s board with a single gap. The more lines you clear, the more garbage it will send.</p>
 <!--            Table on the amounts of garbage sent-->
@@ -159,18 +178,25 @@
             
 <!--        Section on cancelling garbage-->
             <div class="info">
+                <span id="cancel" class="anchor"></span>
                 <h2>Cancelling garbage</h2>
+                <div id="garbagebar">
+                    <img src="images/garbagebar.png" alt="board garbage bar" style="width: 100%">
+                </div>
                 <p>To cancel oncoming garbage, the player will have to send the same amount of lines as the garbage. E.g. if 6 lines of garbage was sent to you, you must clear 6 or more lines in return to cancel it out. Clearing more than that will send lines back towards the opponent.</p>
+                <p>the bar on the right or left side of the board is the oncoming garbage. However high that bar is corresponds to how high the garbage being sent to you will go. For example the image shows the bar going up 5 lines, this means you are being sent 5 lines of garbage. </p>
             </div>
             <hr>
             
 <!--        Section on info about combos and back to back-->
             <div class="info">
+                <span id="combo" class="anchor"></span>
 <!--            combos-->
                 <h2><strong><em>Combo</em></strong></h2>
                 <p>A combo is when you make a line clear with one piece and then quickly follow with another line clear before a timer ends. A continuous combo adds to the amount of lines a player sends. Look to the garbage table for specifics.</p>
 <!--            back-to-back-->
-                <h2 id="b2b"><strong><em>Back-to-Back (B2B)</em></strong></h2>
+                <span id="b2b" class="anchor"></span>
+                <h2><strong><em>Back-to-Back (B2B)</em></strong></h2>
                 <p>A back-to-back or B2B is when a player clears only tetrises or t-spins consecutively without any other type of line clears in between. A B2B chain increases everytime a quad or t-spin is cleared, once any other type of clear is made the chain will break and you will have to restart the chain.</p>
 <!--            Table on back-to-back recognitnions-->
                 <table id="b2b-recog">
