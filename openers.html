@@ -7,7 +7,7 @@
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
 <!--    link to the css stylesheet-->
-        <link rel="stylesheet" href="Styles/main.css"> 
+        <link rel="stylesheet" href="styles/main.css"> 
 <!--    links to used font-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
         <div class="nav navigation">
             <ul class="nav nav-bar">
 <!--            Image link to homepage-->
-                <li><a href="index.html"><img src="images/Tetris-pco-logo-transparent-bg.png" alt="website-logo" id="logo"></a></li>
+                <li><a href="index.html"><img src="images/Tetris-pco-logo-transparent-bg.png" alt="website-logo" class="logo"></a></li>
                 <li> <!-- Dropdown for the different html pages -->
                     <div class="dropdown"> <!-- dropdown menu -->
                         <a href="#" class="nav nav-link dropbtn" id="tetris-websites">Learn ▾</a>
@@ -67,7 +67,7 @@
         <div class="content content-openers">
 <!--            Table of contents (toc) and the script for showing/hiding toc-->
             <div class="toc">
-                <script src="Scripts/toc.js"></script>
+                <script src="scripts/toc.js"></script>
                 <div>
                     <h3>Contents</h3>
                     <button onclick="toggleToc()" style="display: inline-block" id="togglebtn">Hide</button>
@@ -78,11 +78,13 @@
                         <li><a href="#hold">Hold</a></li>
                         <li><a href="#pc">Perfect clear</a></li>
                         <li><a href="#tspin">T-spins</a></li>
-                        <h4 style="margin: 0">Openers</h4>
-                        <ul id="tocsub">
-                            <li><a href="#sdpc">SDPC</a></li>
-                            <li><a href="#pco">PCO</a></li>
-                        </ul>
+                        <li>
+                            <h4 style="margin: 0">Openers</h4>
+                            <ul id="tocsub">
+                                <li><a href="#sdpc">SDPC</a></li>
+                                <li><a href="#pco">PCO</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#other-openers">Other Openers</a></li>
                     </ul>
                 </div>
@@ -117,13 +119,13 @@
                 <div>
                     <h2><strong><em>T-spins</em></strong></h2>
                     <div class="tspin-img-cont">
-                        <div>
+                        <div class="tspin-img">
                             <img src="images/tspin-empty.png" class="tetr-media" alt="empty t-spin demo">
                         </div>
-                        <div id="arrow">
+                        <div class="arrow">
                             <p>>></p>
                         </div>
-                        <div>
+                        <div class="tspin-img">
                             <img src="images/tspin-in.png" class="tetr-media" alt="t-spin demo with a t piece spun into the t-spin">
                         </div>
                     </div>
@@ -165,14 +167,14 @@
                         <img src="images/SDPC2.png" class="tetr-media" alt="2nd step of the sdpc opener">
                         <p class="imglabel">Bag 2</p>
                     </div>
-                    <div id="arrow">
+                    <div class="arrow">
                         <p>>></p>
                     </div>
                     <div class="sdpc-img-cont">
                         <img src="images/SDPC3.png" class="tetr-media" alt="3rd step of the sdpc opener">
                         <p class="imglabel">Bag 3 (t-spin triple)</p>
                     </div>
-                    <div id="arrow">
+                    <div class="arrow">
                         <p>>></p>
                     </div>
                     <div class="sdpc-img-cont">
@@ -192,7 +194,7 @@
                     <table id="pc-line-clear">
                         <tbody>
                             <tr> <!-- header for the table -->
-                                <td colspan="100%" style="font-size: 13px; text-decoration: underline; font-style: italic">PC Garbage Guide</td>
+                                <td colspan="5" style="font-size: 13px; text-decoration: underline; font-style: italic">PC Garbage Guide</td>
                             </tr>
                             <tr>
                                 <th>Lines cleared:</th>
@@ -223,7 +225,10 @@
                         <img src="images/PCOinv.png" alt="PCO inverted">
                     </div>
                     <p>This setup uses all 7 pieces of the first bag. To complete the perfect clear, 3 of the first 4 pieces of the second bag are used for clearing all 4 lines.</p>
-                    <img src="images/pco-f.png" alt="all pco solve variations">
+                    <div>
+                        <img src="images/pco-f.png" alt="all pco solve variations">
+                        <p class="imglabel">Screenshot taken from https://harddrop.com/wiki/Opener</p>
+                    </div>
                     <p style="font-style: italic"><strong>Getting a perfect clear is not always guarranteed using this setup, with a success rate of <span style="text-decoration: underline;color:#f0d280">61.2%.</span></strong></p>
                     <p>If the PC happens to fail, it is quite easy to set up straight into a t-spin.</p>
                 </div>
@@ -235,7 +240,7 @@
                 <span id="other-openers" class="anchor"></span>
                 <h2>Other Openers </h2>
 <!--            Embedded video on tetris openers-->
-                <iframe width="370" height="208" src="https://www.youtube.com/embed/NGVl0d7Ws34?si=aLUZTvgqVnnWwOZk&amp;start=58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="float: right; margin-left: 15px"></iframe>
+                <iframe width="370" height="208" src="https://www.youtube.com/embed/NGVl0d7Ws34?si=aLUZTvgqVnnWwOZk&amp;start=58" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="float: right; margin-left: 15px; border: 0"></iframe>
                 <p>Having an armory of different openers is essential if you want to pull off a lethal entrance in your next vs matches. These two previously explained openers are great to use when queueing into a multiplayer match, Although normal stacking can also come in clutch in times when it is more difficult to foresee a possible opener. For this reason, it is ideal to have multiple different openers even different from the ones previously mentioned.</p>
                 <p>There are many MANY other openers out there which haven’t been covered in this page, all of which play a different purpose depending on how a player wants to play. It is recommended to check out more opener varieties to be able to build a decent armory of openers to use against your next opponent.</p>
                 <br><p>You might also want to do a more in-depth look at openers on something like YouTube. For more info on openers, click <a href="https://harddrop.com/wiki/Opener">here</a>.</p>
@@ -246,7 +251,7 @@
         <br>
             <footer>
                 <div>
-                    <a href="index.html"><img src="images/Tetris-pco-logo-transparent-bg.png" alt="website-logo" id="logo"></a>
+                    <a href="index.html"><img src="images/Tetris-pco-logo-transparent-bg.png" alt="website-logo" class="logo"></a>
                     <p>Tetris Basics</p>
                 </div>
             </footer>
