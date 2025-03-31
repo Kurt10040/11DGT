@@ -127,7 +127,7 @@ hr {opacity: 0.5}
 }
 
 .slider-cont {
-    padding: 2rem;
+    padding: 1rem;
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -137,7 +137,7 @@ hr {opacity: 0.5}
 }
 .slider-wrapper {
     position: relative;
-    max-width: 45rem;
+    max-width: 39rem;
     margin: 0 auto;
 }
 .slider {
@@ -466,6 +466,10 @@ em {
     background-color: #484848;
 }
 
+#pco-invs {
+    width: auto;
+    display: inline-block;
+}
 #pco-invs img {
     width: 250px;
     margin: 5px;
@@ -506,7 +510,7 @@ em {
 
 /*Page styling for the 'rankings' page*/
 #rankings-bg {
-    background-image: url("../images/stacking-bg2.png");
+    background-image: url("../images/tetr-league.png");
     background-size: cover;
 }
 #tr-def {
